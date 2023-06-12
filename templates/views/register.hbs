@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    {{>header}}
+    {{>navbar}}
+    <h1>Employee Registration form</h1>
+    <fieldset>
+      <legend>Registration from</legend>
+      <form action="/register" method="POST">
+        First name:<input type="text" placeholder="Enter First Name" name="firstname" value=""/>
+        Last name:<input type="text" placeholder="Enter Last name" name="lastname" value=""/><br />
+        E mail:<input type="text" placeholder="Enter Your Email" name="email" value=""/><br />
+        Gender:<input type="radio" name="gender" value="male"/>Male
+        <input type="radio" name="gender" value="female"/>Female<br />
+        Age:<input type="text" placeholder="Enter Your Age" name="age" value=""/><br/>
+        Phone No. <input type="tel" minlength="10" maxlength="10" name="phone" value="" placeholder="Enter Your Phone No"/><br/>
+        password:<input type="password" placeholder="Enter Password" name="password" value=""/><br />
+        Confirm password:<input type="password"placeholder="Confirm Password" name="confirmpassword" value=""/><br />
+        <button type="submit" value='register'>Register</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
